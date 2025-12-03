@@ -1,21 +1,30 @@
-# linux-web
-A repo in which to build a lamp stack, add docker support and do a bit of network troubleshooting
+# 🐳 Docker LAMP Lab
 
-This repository provides the starter files for the first Linux-based LAMP stack lab.  
-Students will:
-1. Install Apache, PHP, and MariaDB.
-2. Verify Apache by viewing the default index.html page.
-3. Import the provided SQL file to create a sample database.
-4. Create their own `index.php` file to connect to the database and display data in a styled table.
+In this lab we work through building a small web application using **Docker containers** for both the web server and the database.  
 
-## Files Included
-- **db_setup.sql** – Creates a database (`testdb`) and a `users` table with famous computer scientists.
-- **.devcontainer/devcontainer.json** – Ensures Git and common utilities are available in GitHub Codespaces.
+---
 
-## Usage
-1. Clone this repository or open it in GitHub Codespaces.
-2. Follow the lab instructions provided by your instructor.
-3. After installing Apache, PHP, and MariaDB, import the SQL file:
-   ```bash
-   sudo mysql < db_setup.sql
+## 🗂️ Overview
 
+This lab simulates a **production-like deployment** of a LAMP stack:
+
+- 🖥️ **Web App:** Apache + PHP
+- 🗄️ **Database:** MariaDB
+- 🌐 **Browser:** Interface for viewing the web page
+
+**Key Points:**
+
+- Containers isolate the application and database for easy setup.
+- Persistent volumes keep database data even if containers are restarted.
+- Using Docker means no complicated symlinks or manual server setup.
+- We can easily reset or reproduce the environment on any computer with Docker.
+
+---
+
+## 🚀 Getting Started
+
+These instructions assume you've **forked or cloned** this repo.
+
+View instructions on how to proceed here:
+
+https://tinyurl.com/docker-lamp-lab
